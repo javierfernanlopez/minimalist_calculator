@@ -1,0 +1,144 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+body{
+    background-color: #e5f3ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5f3ff;
+    padding: 5rem 0;
+}
+
+.calculator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: e5f3ff;
+    border-radius: 30px;
+    box-shadow: -15px -25px 20px -20px rgba(255,255,255,1),
+    25px 0px 20px -20px rgba(0,0,0,0.45),
+    15px 25px 20px -20px rgba(0,0,0,0.45),
+    -25px 0px 20px -20px rgba(255,255,255,1);
+    padding: 2.5rem;
+}
+
+.screen{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    align-items: flex-end;
+}
+
+
+
+.screen .operation{
+    width: 100%;
+    background-color: transparent;
+    margin-bottom: .8em;
+    font-size: 2rem; 
+    border: none;
+    margin-left: 1rem; 
+} 
+
+.screen .result{
+    width: 385px;
+    background-color: transparent;
+    border: none;
+    font-size: 4rem;
+    height: 4rem;
+    text-align: end;
+    margin-right: 1rem;
+}
+
+.buttons{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   gap: .5rem; 
+
+}
+
+.buttons .row{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem; 
+}
+
+.button{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-top: 2px;
+    background-color: #ffffff;
+    font-size: 2rem;
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2); 
+    border: none;
+    cursor: pointer;
+    transition: all ease-in-out .15s; 
+    
+} 
+
+.button:hover{
+    background-color: #f0f0f0;
+
+}
+
+.button:active{
+    box-shadow: 0px 4px 8px rgba(darken(rgb(233, 233, 233), 30%));
+    transform: scale(.90); 
+}
+
+.operator{
+    color: red;
+}
+
+.clear{
+    color: orange;
+}
+
+
+.links{
+    position: fixed;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    margin: 0 1rem;
+    transition: all ease-in-out .3s;
+    color: #A1A1A1;
+}
+
+.links a:hover{
+    transform: scale(1.05); 
+}
+
+.links a img{
+    width: 30px;
+    margin: 5px;
+}
