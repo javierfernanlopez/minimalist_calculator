@@ -19,7 +19,7 @@ main{
     justify-content: center;
     align-items: center;
     background-color: #e5f3ff;
-    padding: 5rem 0;
+    margin-top: 5rem;
 }
 
 .calculator{
@@ -33,11 +33,11 @@ main{
     25px 0px 20px -20px rgba(0,0,0,0.45),
     15px 25px 20px -20px rgba(0,0,0,0.45),
     -25px 0px 20px -20px rgba(255,255,255,1);
-    padding: 2.5rem;
+    padding: 2rem 0;
 }
 
 .screen{
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -61,7 +61,7 @@ main{
     background-color: transparent;
     border: none;
     font-size: 4rem;
-    height: 4rem;
+    height: 3rem;
     text-align: end;
     margin-right: 1rem;
 }
@@ -78,13 +78,13 @@ main{
 .buttons .row{
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    gap: 1rem; 
+    justify-content: center;
+    gap: 1rem;
 }
 
 .button{
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     margin-top: 2px;
     background-color: #ffffff;

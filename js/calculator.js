@@ -1,5 +1,5 @@
 let addToScreen = (dato) => {
-    document.getElementById("screen").value += dato;
+    document.getElementById("screenResult").value += dato; 
 }
 
 let clearScreen = () => {
@@ -10,7 +10,7 @@ let clearScreen = () => {
 let calculate = () => {
     let result = "E";
 
-    let operation = document.getElementById("screen").value;
+    let operation = document.getElementById("screenResult").value;
 
     let found = false;
     for(let i=0; i<operation.length-1 && found == false; i++){
@@ -41,7 +41,7 @@ let calculate = () => {
         }
     }
 
-
+    document.getElementById("screen").value = operation;
     document.getElementById("screenResult").value = result;
 }
 
